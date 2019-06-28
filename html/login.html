@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../image/timg.jpg" rel="shortcut icon" type="image/x-icon">
+    <title>登录 - 当当网</title>
+    <style>
+        * {
+            list-style: none;
+        }
+
+        .head {
+            margin: 0 auto;
+            width: 1200px;
+            height: 70px;
+        }
+
+        .head_info {
+            display: flex;
+            height: 70px;
+            width: 1200px;
+            justify-content: space-between;
+        }
+
+        .head_l {
+            width: 400px;
+        }
+
+        .head_l img {
+            height: 60px;
+            margin-top: 7px;
+        }
+
+        .head_r {
+            color: #787878;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 34px;
+        }
+
+        .mid_banna_r {
+            height: 600px;
+        }
+
+        .mid_banna {
+            margin: 0 auto;
+            width: 1200px;
+            display: flex;
+            height: 600px;
+            ;
+            justify-content: space-between;
+        }
+
+        .mid_banna .mid_banna_l a {
+            background: url("../image/bigbanna.jpg") no-repeat;
+            display: block;
+            height: 655px;
+            width: 600px;
+        }
+
+        .tip {
+            width: 338px;
+            margin-bottom: 0px;
+            padding-left: 17px;
+            font-size: 12px;
+            height: 24px;
+            margin-top: 0px;
+            line-height: 24px;
+            border: 1px solid #fedbd1;
+            color: #828282;
+            background: url("../image/sprlogin.png") 0px -55px no-repeat #fef7f5
+        }
+
+        .tip a {
+            color: #1a66b3;
+            text-decoration: none;
+        }
+
+        .tip a:hover {
+            text-decoration: underline;
+        }
+
+        .selet-input {
+
+            margin-top: 50px;
+        }
+
+        .selet-sm {
+            margin-top: 50px;
+            width: 357px;
+            height: 498px;
+            display: none;
+        }
+
+        .selet-sm .log_in {
+            width: 320px;
+            padding: 15px;
+            padding-right: 20px;
+            position: relative;
+            border: 1px solid #EEF2F4;
+            box-shadow: 0px 1px 2px #eee;
+            height: 425px;
+        }
+
+        .log_in {
+            width: 320px;
+            padding: 15px;
+            padding-right: 20px;
+            position: relative;
+            border: 1px solid #EEF2F4;
+            box-shadow: 0px 1px 2px #eee;
+        }
+
+        .selet-sm .log_in a {
+            color: #1a66b3;
+            text-decoration: none;
+        }
+
+        .log_in a {
+            color: #1a66b3;
+            text-decoration: none;
+        }
+
+        .selet-sm .log_in a:hover {
+            text-decoration: underline;
+        }
+
+        .log_in a:hover {
+            text-decoration: underline;
+        }
+
+        .selet-sm .log_in_top p:first-child {
+            float: left;
+            font-size: 18px;
+            color: #3c3c3c;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .log_in_top p:first-child {
+            float: left;
+            font-size: 18px;
+            color: #3c3c3c;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .selet-sm .log_in_top {
+            height: 30px;
+        }
+
+        .log_in_top {
+            height: 30px;
+        }
+
+        .selet-sm .log_in_top .saoma {
+            margin-top: 0px;
+            position: absolute;
+            top: 7px;
+            right: 68px;
+            border: 1px solid #fedbd1;
+            color: #ff572a;
+            padding: 4px 6px;
+            font-size: 12px;
+            padding-left: 16px;
+            background: url("../image/sprlogin.png") 0px -55px no-repeat #fef7f5;
+        }
+
+        .log_in_top .saoma {
+            margin-top: 0px;
+            position: absolute;
+            top: 7px;
+            right: 68px;
+            border: 1px solid #fedbd1;
+            color: #ff572a;
+            padding: 4px 6px;
+            font-size: 12px;
+            padding-left: 16px;
+            background: url("../image/sprlogin.png") 0px -55px no-repeat #fef7f5;
+        }
+
+        .selet-sm .log_in_top .erweimazz {
+            position: absolute;
+            top: 7px;
+            right: 0px;
+        }
+
+        .erweimainfo {
+            margin-top: 90px;
+            display: flex;
+            justify-content: space-between;
+            ;
+        }
+
+        .erweimainfo img:first-child {
+            width: 143px;
+            height: 143px;
+            padding: 10px;
+            position: relative;
+            left: 86px;
+            border: 1px solid #ECECEC;
+        }
+
+        .erweimainfo img:nth-child(2) {
+            height: 180px;
+            position: relative;
+            top: -10px;
+            display: none;
+        }
+
+        .log_in_top .erweima {
+            position: absolute;
+            top: 7px;
+            right: 0px;
+        }
+
+        .log_in_mid {
+            overflow: hidden;
+            width: 315px;
+            margin-bottom: 30px;
+            margin-right: 0px;
+        }
+
+        .log_in_mid div {
+            width: 312px;
+            height: 34px;
+            border: 1px solid #eef2f4;
+            color: #B0B7CC;
+            margin-top: 20px;
+            float: right;
+
+        }
+
+        .log_in_mid input {
+            width: 270px;
+            height: 32px;
+            border: none;
+            float: right;
+            padding-right: 10px;
+            outline: none;
+        }
+
+        .yz_tit {
+            display: flex;
+            font-size: 14px;
+            justify-content: space-between;
+        }
+
+        .yz_tit a {
+            color: #1a66b3;
+            text-decoration: none;
+        }
+
+        .yzphoto {
+            display: flex;
+        }
+
+        .yzphoto div {
+            width: 76px;
+            height: 76px;
+        }
+
+        .pohto1_1 {
+            background: url("../image/yanzheng.jpg") 0px 0px no-repeat;
+        }
+
+        .pohto2_1 {
+            background: url("../image/yanzheng.jpg") -76px 0px no-repeat;
+        }
+
+        .pohto3_1 {
+            background: url("../image/yanzheng.jpg") -152px 0px no-repeat;
+        }
+
+        .pohto4_1 {
+            background: url("../image/yanzheng.jpg") -228px 0px no-repeat;
+        }
+
+        .pohto1_2 {
+            background: url("../image/yanzheng.jpg") 0px -76px no-repeat;
+        }
+
+        .pohto2_2 {
+            background: url("../image/yanzheng.jpg") -76px -76px no-repeat;
+        }
+
+        .pohto3_2 {
+            background: url("../image/yanzheng.jpg") -152px -76px no-repeat;
+        }
+
+        .pohto4_2 {
+            background: url("../image/yanzheng.jpg") -228px -76px no-repeat;
+        }
+
+        .pohto1_3 {
+            background: url("../image/yanzheng.jpg") 0px -152px no-repeat;
+        }
+
+        .pohto2_3 {
+            background: url("../image/yanzheng.jpg") -76px -152px no-repeat;
+        }
+
+        .pohto3_3 {
+            background: url("../image/yanzheng.jpg") -152px -152px no-repeat;
+        }
+
+        .pohto4_3 {
+            background: url("../image/yanzheng.jpg") -228px -152px no-repeat;
+        }
+
+        .pohto1_4 {
+            background: url("../image/yanzheng.jpg") 0px -228px no-repeat;
+        }
+
+        .pohto2_4 {
+            background: url("../image/yanzheng.jpg") -76px -228px no-repeat;
+        }
+
+        .pohto3_4 {
+            background: url("../image/yanzheng.jpg") -152px -228px no-repeat;
+        }
+
+        .pohto4_4 {
+            background: url("../image/yanzheng.jpg") -228px -228px no-repeat;
+        }
+
+        .auto_login {
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
+            color: #6e6e6e;
+        }
+
+        .auto_login a {
+            font-size: 14px;
+        }
+
+        .butt button {
+            width: 100%;
+            border-radius: 5px;
+            color: #fff;
+            display: inline-block;
+            height: 44px;
+            text-align: center;
+            background: #f01923;
+            border: none;
+        }
+
+        .butt button:hover {
+            background: #ff2832;
+        }
+
+        .login_kind {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login_kind p {
+            font-size: 12px;
+            color: #6e6e6e;
+        }
+
+        .login_icon {
+            display: flex;
+        }
+
+        .login_icon p {
+            margin: 0px;
+            margin-left: 10px;
+        }
+
+        .login_icon p a {
+            color: #969696;
+            font-size: 12px;
+        }
+
+        .login_icon p a:hover {
+            color: #787878;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .login_icon div {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .qq {
+            background: url("../image/sprlogin.png") 0px -260px no-repeat #fef7f5;
+        }
+
+        .qq:hover {
+            background: url("../image/sprlogin.png") -20px -260px no-repeat #fef7f5;
+        }
+
+        .vx {
+            background: url("../image/sprlogin.png") 0px -280px no-repeat #fef7f5;
+        }
+
+        .vx:hover {
+            background: url("../image/sprlogin.png") -20px -280px no-repeat #fef7f5;
+        }
+
+        .vb {
+            background: url("../image/sprlogin.png") 0px -300px no-repeat #fef7f5;
+        }
+
+        .vb:hover {
+            background: url("../image/sprlogin.png") -20px -300px no-repeat #fef7f5;
+        }
+
+        .zfb {
+            background: url("../image/sprlogin.png") 0px -320px no-repeat #fef7f5;
+        }
+
+        .zfb:hover {
+            background: url("../image/sprlogin.png") -20px -320px no-repeat #fef7f5;
+        }
+
+        .erweima_ed {
+            display: flex;
+            width: 280px;
+            justify-content: space-around;
+            margin-left: 20px;
+            margin-top: 30px;
+            position: absolute;
+            bottom: 55px;
+        }
+
+        .footer_nav_box {
+            text-align: center;
+            color: #8c8c8c;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .footer_nav {
+            text-align: center;
+            line-height: 20px;
+            padding-bottom: 17px;
+            padding-top: 25px;
+        }
+
+        .footer_nav_box a {
+            text-decoration: none;
+            color: #8c8c8c;
+        }
+
+        .footer_nav span {
+            margin-left: 19px;
+            margin-right: 17px;
+        }
+
+        .footer_nav_box a:hover {
+            color: #8c8c8c;
+            font-size: 12px;
+            text-decoration: underline;
+
+        }
+
+        .footer_copyright .sep {
+            margin-left: 19px;
+            margin-right: 17px;
+        }
+
+        .footer_copyright {
+            line-height: 20px;
+            text-align: center;
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+
+        .footer_icon {
+            padding: 10px 0 0 340px;
+            width: 640px;
+            margin: 0 auto;
+            height: 77px;
+        }
+
+        .validator {
+            float: left;
+            display: inline;
+            padding: 15px 5px 15px;
+            width: 135px;
+            height: 47px;
+        }
+
+        #J_loginMask {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10010;
+        }
+
+        .pop_cheat {
+            position: absolute;
+            padding-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid #E6E6E6;
+            font-size: 12px;
+            color: #646464;
+            top: 50%;
+            left: 50%;
+            width: 492px;
+            margin-left: -246px;
+            margin-top: -141px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .pop_cheat h3 {
+            background-color: #F5F5F5;
+            margin: 0px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .pop_cheat_info b {
+            color: #FF2832;
+
+
+        }
+
+        .pop_cheat_info {
+            padding: 16px 15px 0px 20px;
+            line-height: 24px;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            height: 24px;
+            line-height: 24px;
+            background-color: #FF2832;
+            padding: 0 10px;
+            border-radius: 3px;
+        }
+
+        .btn a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .masks_bg {
+            border: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            filter: alpha(opacity=10);
+            opacity: 0.1;
+        }
+
+        .username span {
+            display: inline-block;
+            width: 30px;
+            height: 36px;
+            background: url("../image/sprlogin.png") 6px -112px no-repeat;
+        }
+
+        .password span {
+            display: inline-block;
+            width: 30px;
+            height: 36px;
+            background: url("../image/sprlogin.png") 6px -151px no-repeat;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="head_info">
+            <div class="head_l"><img src="../image/download.gif" alt="当当网"></div>
+            <div class="head_r"><span></span><span></span><a>“登录页面“改进建议</a></div>
+        </div>
+
+    </div>
+    <div class="mid_banna">
+        <div class="mid_banna_l">
+            <a href=""></a>
+        </div>
+        <div class="mid_banna_r">
+            <div class="selet-input">
+                <p class="tip">请勿设置与邮箱及其他网站相同的登录及支付密码,<a href="">谨防诈骗</a></p>
+                <div class="log_in">
+                    <div class="log_in_top">
+                        <p>密码登陆</p>
+                        <p class="saoma">扫码登陆更安全</p>
+                        <div class="erweima">
+                            <img src="../image/erweima.png" alt="">
+                        </div>
+                    </div>
+                    <div class="log_in_mid">
+                        <div class="username">
+                            <span></span><input class="user" type="text" placeholder="邮箱/昵称/手机号码" />
+                        </div>
+                        <div class="password">
+                            <span></span><input class="passw" type="password" placeholder="密码" />
+                        </div>
+                    </div>
+                    <div class="yanzheng">
+                        <div class="yz_tit">
+                            <p>请点击下方图片，旋转至正确方向</p>
+                            <p><a href="#">换一组</a></p>
+                        </div>
+                        <div class="yzphoto">
+                            <div class="pohto1_2"></div>
+                            <div class="pohto2_1"></div>
+                            <div class="pohto3_1"></div>
+                            <div class="pohto4_1"></div>
+                        </div>
+                    </div>
+                    <div class="auto_login">
+                        <p><input id="checks" type="checkbox">七天自动登陆</p>
+                        <p><a href="">忘记密码</a></p>
+                    </div>
+                    <div class="butt">
+                        <button class="buttt">登陆</button>
+                    </div>
+                    <div class="login_kind">
+                        <p>使用合作网站登陆</p>
+                        <p><a href="./register.html">立即注册</a></p>
+                    </div>
+                    <div class="login_icon">
+                        <div class="qq"></div>
+                        <div class="vx"></div>
+                        <div class="vb"></div>
+                        <div class="zfb"></div>
+                        <p><a href="#">更多</a><span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="selet-sm">
+                <p class="tip">请勿设置与邮箱及其他网站相同的登录及支付密码,<a href="">谨防诈骗</a></p>
+                <div class="log_in">
+                    <div class="log_in_top">
+                        <p>扫一扫</p>
+                        <p class="saoma">密码登陆在这里</p>
+                        <div class="erweimazz">
+                            <img src="../image/zzz.png" alt="">
+                        </div>
+                    </div>
+                    <div class="erweimainfo">
+                        <img src="../image/erweimazz.png" alt="">
+                        <img src="../image/saoma2.png" alt="">
+                    </div>
+                    <div class="erweima_ed">
+                        <p>打开<a>手机当当</a></p>
+                        <p>扫一扫登陆</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="footer_nav_box">
+        <div class="footer_nav"><a href="http://static.dangdang.com/topic/2227/176801.shtml" target="_blank"
+                rel="nofollow">公司简介</a><span class="sep">|</span><a href="http://zhaopin.dangdang.com"
+                target="_blank">诚聘英才</a><span class="sep">|</span><a
+                href="http://static.dangdang.com/topic/744/200778.shtml" target="_blank">手机当当</a><span
+                class="sep">|</span><a href="http://union.dangdang.com/" target="_blank">网站联盟</a><span
+                class="sep">|</span><a href="http://outlets.dangdang.com/merchants_open" target="_blank">当当招商</a><span
+                class="sep">|</span><a href="http://misc.dangdang.com/groupbuy/Default.aspx" target="_blank"
+                rel="nofollow">机构销售</a><span class="sep">|</span><a href="http://blog.dangdang.com/"
+                target="_blank">官方Blog</a>
+
+        </div>
+        <div class="footer_copyright"><span>Copyright (C) 当当网 2004-2017, All Rights Reserved</span></div>
+        <div class="footer_copyright"><span><a href="http://www.miibeian.gov.cn/" target="_blank"
+                    rel="nofollow">京ICP证041189号</a></span><span class="sep">|</span><span>出版物经营许可证
+                新出发京批字第直0673号</span><span
+                class="sep">|</span><span>食品流通许可证：SP1101011010021855(1-1)</span><br><span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span><span
+                class="sep">|</span><span>京公网安备110101000001号</span></div>
+        <!-- 有三个icon的时候加footer_icon2 -->
+        <div class="footer_icon footer_icon2" style="padding-left: 55px;">
+            <div class="validator"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001051000098"
+                    target="_blank" class="footer_img"><img src="../image/ccc.png"></a></div>
+            <div class="validator"><a href="http://bj429.com.cn/" target="_blank" class="footer_img"><img
+                        src="../image/ccc2.png"></a></div>
+            <div class="validator"><a id="_pingansec_bottomimagesmall_brand"
+                    href="http://si.trustutn.org/info?sn=302161014024825726885&certType=1" target="_blank"><img
+                        src="../image/ccc3.gif"></a></div>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
+
+    <!--页尾 end -->
+    <!-- 防诈骗弹窗 开始 -->
+    <div class="masks" id="J_loginMask" style="display:inline-block;;">
+        <iframe class="masks_bg"></iframe>
+        <div class="pop_cheat">
+            <h3>安全提醒</h3>
+            <div class="pop_cheat_info clearfix">
+                <div>
+                    <span
+                        class="right">当当平台及销售商<b>不会以任何理由，要求您点击任何网址链接进行退款或支付操作。</b>当当客服电话400-106-6666，0527-80878888。</span>
+                </div>
+            </div>
+            <div class="btn"><a id="J_loginMaskClose" href="javascript:void(0);">知道了</a></div>
+        </div>
+    </div>
+    <!-- 防诈骗弹窗 结束 -->
+
+</body>
+<script src="../js/Cookie.js"></script>
+<script>
+    //验证图片
+    var yz = document.querySelectorAll(".yzphoto div");
+    for (let i = 0; i < yz.length; i++) {
+        yz[i].onclick = function () {
+            let token = yz[i].getAttribute("class");
+            let arr = token.split("_");
+            let num = arr[1];
+            num++
+            if (num >= 5) {
+                num = 1
+            }
+            yz[i].setAttribute("class", arr[0] + "_" + num)
+        }
+    }
+    //切换登陆模式
+    $(".erweima");
+    console.log($(".erweima"));
+    $(".erweima").click(function () {
+        $(".selet-input").attr({ style: "display:none" });
+        $(".selet-sm").attr({ style: "display:block" });
+    })
+    $(".erweimazz").click(function () {
+        $(".selet-input").attr({ style: "display:block" });
+        $(".selet-sm").attr({ style: "display:none" });
+    })
+    //二维码滑动
+    $(".erweimainfo").hover(function () {
+        $(".erweimainfo img:first-child").stop().animate({ left: "0px" }, function () {
+            $(".erweimainfo img:nth-child(2)").show()
+        });
+    }, function () {
+        $(".erweimainfo img:nth-child(2)").hide();
+        $(".erweimainfo img:first-child").stop().animate({ left: "86" })
+    })
+    //点击取消警示窗
+    $(".btn").click(function () {
+        $("#J_loginMask").hide();
+    })
+    //  ajax 请求登陆
+    $(".buttt").click(function () {
+        let yz1 = $(".yzphoto div").eq(0).attr("class");
+        let yz2 = $(".yzphoto div").eq(1).attr("class");
+        let yz3 = $(".yzphoto div").eq(2).attr("class");
+        let yz4 = $(".yzphoto div").eq(3).attr("class");
+        console.log(yz1);
+        console.log(yz2);
+        console.log(yz3);
+        console.log(yz4);
+        if (yz1 == "pohto1_1" && yz2 == "pohto2_1" && yz3 == "pohto3_3" && yz4 == "pohto4_2") {
+            $.post("http://47.104.244.134:8080/userlogin.do", {
+                name: $(".user").val(),
+                password: $(".passw").val()
+            }).done(function (data) {
+                    let checkss = document.getElementById("checks");
+                    if (checkss.disabled) {
+                        setCookie("info", data.data.token, 7);
+                    } else {
+                        setCookie("info", data.data.token);
+                    }
+                    setTimeout(function () {
+                        location.href = "../index.html"
+                    }, 2000);
+            })
+
+        }else{
+            alert("验证码错误");
+            $(".user").val("");
+            $(".passw").val("");
+        }
+
+
+    })
+
+    // 
+
+</script>
+
+</html>

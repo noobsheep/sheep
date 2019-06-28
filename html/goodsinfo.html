@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>当当网图书_小说传记_青春文学_成功励志_投资理财_各品类图书畅销榜</title>
+    <link href="../image/timg.jpg" rel="shortcut icon" type="image/x-icon">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../node_modules/_swiper@4.5.0@swiper/dist/css/swiper.css" rel="stylesheet">
+    <link href="../css/text.css" rel="stylesheet">
+    <style>
+       
+            
+        
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="head_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 center-block " id="nav_l">
+                        <div id="hoverss">送至 :<span id="place">北京</span>
+                            <sapn class="glyphicon glyphicon-chevron-down"></sapn>
+                        </div>
+                        <ul class="hoverss_list">
+                            <li>北京</li>
+                            <li>天津</li>
+                            <li>河北</li>
+                            <li>山西</li>
+                            <li>内蒙古</li>
+                            <li>辽宁</li>
+                            <li>吉林</li>
+                            <li>黑龙江</li>
+                            <li>上海</li>
+                            <li>江苏</li>
+                            <li>浙江</li>
+                            <li>安徽</li>
+                            <li>福建</li>
+                            <li>江西</li>
+                            <li>山东</li>
+                            <li>河南</li>
+                            <li>湖南</li>
+                            <li>湖北</li>
+                            <li>广东</li>
+                            <li>广西</li>
+                            <li>海南</li>
+                            <li>重庆</li>
+                            <li>四川</li>
+                            <li>贵州</li>
+                            <li>云南</li>
+                            <li>西藏</li>
+                            <li>陕西</li>
+                            <li>甘肃</li>
+                            <li>青海</li>
+                            <li>宁夏</li>
+                            <li>新疆</li>
+                            <li>台湾</li>
+                            <li>香港</li>
+                            <li>澳门</li>
+                            <li>钓鱼岛</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4  " id="nav_m">欢迎光临当当，请<a class="link" href="./login.html">登陆</a> <span
+                            id="vip">成为会员</span> </div>
+                    <div class="col-md-6 center-block" id="nav_r">
+                        <ul id="nav_rnav">
+                            <li><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp; 购物车<span
+                                    class="num">0</span></li>
+                            <li>我的订单</li>
+                            <li>我的云书房</li>
+                            <li class="select">我的当当 &nbsp;&nbsp;<sapn class="glyphicon glyphicon-chevron-down"></sapn>
+                                <ul class="selectList">
+                                    <li>银铃铛抵现</li>
+                                    <li>我的收藏</li>
+                                    <li>我的余额</li>
+                                    <li>我的评论</li>
+                                    <li>礼券/礼卡</li>
+                                </ul>
+                            </li>
+                            <li>小说投稿</li>
+                            <li>我要出书</li>
+                            <li class="select">企业采购 &nbsp;&nbsp;<sapn class="glyphicon glyphicon-chevron-down"></sapn>
+                                <ul class="selectList">
+                                    <li>大综采购</li>
+                                    <li>礼品卡采购</li>
+                                    <li>礼品卡激活</li>
+                                    <li>礼品卡使用</li>
+                                    <li>3数码团购</li>
+                                </ul>
+                            </li>
+                            <li class="select">客户服务 &nbsp;&nbsp;<sapn class="glyphicon glyphicon-chevron-down"></sapn>
+                                <ul class="selectList">
+                                    <li>帮助中心</li>
+                                    <li>自动退款</li>
+                                    <li>自动发货</li>
+                                    <li>联系客服</li>
+                                    <li>我要投诉</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo_line">
+        <div class="container">
+            <div class="logodiv"><img id="logonav" src="../image/download.gif" alt="当当">
+            </div>
+            <div class="search">
+                <div class="serachdiv">
+                    <input type="text" id="searchtext" placeholder="30万图书每满100减40" />
+                    <div class="dropdown" id="searchsele">
+                        <button
+                            style="width:108px;height: 38px;color:#969696;border:none;z-index:0; border-radius: 0px;background: #F6F6F6;"
+                            class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span id="kind" style="z-index:0;color:#969696;">全部分类<span>
+                                    <span class="glyphicon glyphicon-chevron-down" style="z-index:0"></span>
+                        </button>
+                        <ul class="dropdown-menu" style="z-index:0" aria-labelledby="dropdownMenu2"
+                            style="color: #969696;border-radius: 0px;width:108px;font-size:12px;  z-index: 15">
+                            <li><a href="#">全部分类</a></li>
+                            <li><a href="#">唯品会</a></li>
+                            <li><a href="#">图书</a></li>
+                            <li><a href="#">电子书</a></li>
+                        </ul>
+                    </div>
+                    <input type="button" id="subm" style="">
+                </div>
+                <div id="tip">
+                    <div style="display:flex">
+                        <span style="display: block;">热搜：</span>
+                        <ul class="tiplist">
+                            <li>乔治的宇宙</li>
+                            <li>张嘉佳</li>
+                            <li>王芳</li>
+                            <li>小学生作文</li>
+                            <li>加措</li>
+                        </ul>
+                    </div>
+                    <p id="ss">高级搜素</p>
+                </div>
+            </div>
+            <div class="carticon">
+                <div class="cart">
+                   <span class="glyphicon glyphicon-shopping-cart"></span> <span>购物车<span><span style="color:white" class="num">0</span></a>
+                </div>
+                <div class="goods">
+                    <span>我的订单<span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one_nav">
+        <div class="container">
+            <div class="all_list">
+                <span>全部商品分类<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+            <div class="nav_r_list">
+                <ul>
+                    <li>图书</li>
+                    <li>电子书</li>
+                    <li>网络文学</li>
+                    <li>GAP</li>
+                    <li>户外运动</li>
+                    <li>孕婴童</li>
+                    <li>家具</li>
+                    <li>当当优品</li>
+                    <li>食品</li>
+                    <li>Apple</li>
+                    <li>电器城</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tabcard">
+        <div class="container">
+            <diV class="tabcard_left" style="display: none; position: absolute;z-index: 10;" >
+                <ul class="hoverul">
+                    <li class="hoverbut"><span>图书、童书</span>
+                        <div class="tab_sele">
+                            <ul class="tab_tit">
+                                <li><a>图书馆&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                                <li><a>童书馆&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                            </ul>
+                            <div class="tab_list_">
+                                <span><a href="">阅读器</a></span>
+                                <ul class="tab_list_ul">
+                                    <li><a>新锐版</a></li>
+                                    <li><a>Light（高清版）</a></li>
+                                    <li><a>新锐版</a></li>
+                                    <li><a>Light（高清版）</a></li>
+                                    <li><a>新锐版</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab_list_">
+                                <span><a href="">阅读器</a></span>
+                                <ul class="tab_list_ul">
+                                    <li><a>新锐版</a></li>
+                                    <li><a>Light（高清版）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">电子书、网络文学</span>
+                        <div class="tab_sele">2</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">创意文具、拍卖</span>
+                        <div class="tab_sele">3</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">服饰、内衣</span>
+                        <div class="tab_sele">4</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">鞋靴、箱包</span>
+                        <div class="tab_sele">5</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">户外运动</span>
+                        <div class="tab_sele">6</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">孕、婴、童</span>
+                        <div class="tab_sele">7</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">家具、家纺、汽车</span>
+                        <div class="tab_sele">8</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">家具、家装、康体</span>
+                        <div class="tab_sele">9</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">美妆、个人湖护理、成人</span>
+                        <div class="tab_sele">10</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">食品、茶酒、生鲜</span>
+                        <div class="tab_sele">11</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">腕表、珠宝饰品、眼镜</span>
+                        <div class="tab_sele">12</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">手机、数码</span>
+                        <div class="tab_sele">13</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">电脑办公</span>
+                        <div class="tab_sele">14</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">家用电器</span>
+                        <div class="tab_sele">15</div>
+                    </li>
+                    <li class="hoverbut"><span class="goodstype">当当礼品卡、生活服务</span>
+                        <div class="tab_sele">16</div>
+                    </li>
+                </ul>
+            </diV>
+            <div class="goods_info">
+                <div class="goods_info_head">
+                    <h4>目前是图书</h4>
+                    <h5>随便写点>哈>哈>哈</h5>
+                </div>
+                <div class="goods_info_mid">
+                    <div class="fangda">
+                            <img class="ximg" src="../image/xiaode.jpg">
+                            <div id="shade"></div>
+                        <div id="rbox">
+                            <img class="dimg" src="../image/dade.jpg">
+                        </div>
+                    </div>
+                    <div class="goods_tit_">
+                        <h3>我ri啊写不完了</h3>
+                        <h3 id="namee"></h3>
+                        <img class="tttp" src=""/ alt="这玩意没图">
+                        <h3>价格：<span class="jiage">200</span>元</h3>
+                        <div>
+                            <button id="jian">-</button><input type="text" id="num" value="1"><button id="jia">+</button>
+                        </div>  
+                        <button id="cart">加入购物车</button>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/_jquery@1.11.3@jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js""></script>
+    <script src=" ../js/animateBak.js"> </script> <script src="../js/common.js"></script>
+    <script src="../node_modules/_swiper@4.5.0@swiper/dist/js/swiper.js"></script>
+    <script src="../js/Cookie.js"></script>
+    <script>
+        $(function () {
+            // select下拉菜单 选择地区效果 
+            $("#nav_l").hover(function () {
+                $("#hoverss").css({ border: "1px solid  #E6E6E6", background: "#FFFFFF" })
+                    .children().filter(" .glyphicon-chevron-down").attr("class", "glyphicon glyphicon-chevron-up");
+                $(".hoverss_list").attr({ style: "display:flex" })
+            }, function () {
+                console.log(1)
+                $("#hoverss").css({ border: "1px solid transparent", background: "#f9f9f9" })
+                    .children().filter(".glyphicon-chevron-up").attr("class", "glyphicon glyphicon-chevron-down")
+                $(".hoverss_list").attr({ style: "display:none" })
+            })
+            //选择地区
+            $(".hoverss_list li").each(function () {
+                $(this).click(function () {
+                    let info = $(this).html();
+                    $("#place").html(info);
+
+                })
+            })
+            //select 下拉栏效果
+
+            $(".select").each(function (i) {
+                $(".select").hover(function () {
+                    $(this)
+                        .attr({ style: "background:#fff;height:141px;border:1px solid #eaeaea;width:83px;margin-top:7px;" })
+                        .children().filter(".selectList").attr({ style: "display:block;" })
+                        .parents().children().filter(".glyphicon-chevron-down")
+                        .attr("class", "glyphicon glyphicon-chevron-up")
+
+                }, function () {
+                    $(this)
+                        .attr({ style: "background:#f9f9f;height:18px;border:none;width:83px; #eaeaea; padding-left:6px" })
+                        .children().filter(".selectList").attr({ style: "display:none;" })
+                        .parents().children().filter(".glyphicon-chevron-up")
+                        .attr("class", "glyphicon glyphicon-chevron-down")
+                })
+            })
+            //选择效果
+            $("#searchsele .dropdown-menu li a").each(function () {
+                $(this).click(function () {
+                    let info = $(this).html();
+                    $("#kind").html(info);
+
+                })
+            })
+        })
+
+
+
+
+
+        $(".tabcard_left ul .hoverbut").hover(function () {
+            $(this).attr({ style: "border-color:#FF2832;border-right: 7px solid white;font-size:14px;color:#FF2832" })
+            // $(".tab_info" ).attr({style:"display:none"})
+            let num = $(this).index();
+            $(".tab_sele").eq(num).attr({ style: "display:block" });
+            $(".tabcard_left .hoverul").attr({ style: "border-color:red" })
+        }, function () {
+            $(this).attr({ style: "border-color:transparent;font-size:13px;color:black" })
+            // $(".tab_info" ).attr({style:"display:block"});
+            let num = $(this).index();
+            $(".tab_sele").eq(num).attr({ style: "display:none" });
+            $(".tabcard_left .hoverul").attr({ style: "border-color:transparent" })
+        });
+
+        $(".cart").click(function(){
+            location.href = "./cart.html"
+        })
+        // $.get("http://47.104.244.134:8080/goodsbytid.do", { tid: 13, page: 1, limit: 10 }, function (data) {
+        //     console.log(data.data);
+        //     var str = ""
+        //     data.data.forEach(function (item, index) {
+        //         var a = item.name.split(" ")
+        //         str =
+        //             `<ul class="tab_tit">
+        //             <li><a>${item.typename}&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+        //             <li><a>${item.pubdate}&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+        //             </ul>
+        //             <div class="tab_list_">
+        //             <span><a href="">${item.price}元</a></span>
+        //             <ul class="tab_list_ul">`
+        //         var strs = "";
+        //         a.forEach(function (items) {
+        //             console.log(item);
+        //             var info = `
+        //             <li><a>${items}</a></li>`
+        //             strs = strs + info;
+        //         })
+        //         str = str + strs + "</ul></div>"
+        //         $(".tab_sele").eq(index).html(str);
+        //     })
+        // })
+        var a = $("#num").val()
+        $(".all_list").hover(function () {
+            $(".tabcard_left").show();
+        }, function () {
+            $(".tabcard_left").hide();
+        })
+
+        //加减
+        $("#jia").click(function(){
+            let num = $("#num").val();
+            num++
+            $("#num").val(num);
+        })
+        $("#jian").click(function(){
+          let num = $("#num").val();
+          num--
+          if(num<1){
+              num=1
+          }
+          $("#num").val(num);
+        })
+        //ajax
+        var idinfo = location.search.split("=")
+         $.get("http://47.104.244.134:8080/goodsbyid.do",{id:idinfo[1]},function(data){
+             console.log(data);
+             let price = data.price;
+             let picurl = data.picurl;
+            $(".jiage").val(price);
+             $(".tttp").attr("src",picurl);
+             let nam = document.querySelector("#namee")
+             nam.innerHTML = data.name;
+        })
+
+        $("#cart").click(function(){
+            let a = $("#num").val();
+            let p = $(".tttp").attr("src");
+            let j = $(".jiage").val();
+            let n = $("#namee").html()
+            if(getCookie("goods")){
+                let goods_info = getCookie("goods");
+                 goods_info = JSON.parse(goods_info);
+                 console.log("看看有没有")
+                 if(goods_info.some(function(item){
+                    return item.id == idinfo[1]
+                 })){
+                     console.log("有了")
+                     let goods_info =  getCookie("goods")
+                     goods_info = JSON.parse(goods_info);
+                    goods_info.forEach(function(item){
+                        if(item.id==idinfo[1]) {
+                            let nums=  parseInt(item.num);
+                            a = parseInt(a);
+                            item.num = nums + a
+                            goods_info = JSON.stringify(goods_info)
+                            setCookie("goods",goods_info,7)
+                        }
+                    });
+                 }else{
+                    let goods_info =  getCookie("goods")
+                    goods_info = JSON.parse(goods_info);
+                     console.log("不是一样的")
+                     let obj = {}
+                     obj.id = idinfo[1];
+                     obj.num = a;
+                     obj.picurl = p;
+                     obj.price = j;
+                     obj.name = n;
+                     goods_info.push(obj);
+                     goods_info = JSON.stringify(goods_info)
+                     setCookie("goods",goods_info,7);
+                 }
+            }else{
+                console.log("undefind")
+                let a = $("#num").val();
+                let obj = {};
+                let arr = [];
+                obj.id = idinfo[1];
+                obj.num = a;
+                obj.picurl = p;
+                obj.price = j;
+                obj.name = n;
+                arr.push(obj);
+                let info =  JSON.stringify(arr);
+                setCookie("goods",info,7);
+            }            
+        })
+        //购物车显示数量
+        let lan = getCookie("goods");
+        if (lan != null) {
+            lan = JSON.parse(lan);
+            var num = lan.length;
+            console.log(num);
+            $(".num").html(num);
+        }
+        //放大镜
+    //     class Ddj {
+    //     constructor(sel) {
+    //         this.sel = sel;
+    //         this.el = document.querySelector(this.sel)
+    //         this.mask = document.querySelector(this.sel + ' #shade')
+    //         this.big = document.querySelector(this.sel + ' #rbox')
+    //         this.bigImg = document.querySelector(this.sel + ' .dimg')
+    //         this.smallImg = document.querySelector(this.sel + ' .ximg')
+    //         let that = this;
+    //         this.reSizeBigImg()
+    //         this.maskAndBigImgMove()
+    //     }
+    //     maskAndBigImgMove() {
+    //         let that = this;
+    //         this.el.onmousemove = function (evt) {
+    //             let offsetX = evt.pageX - that.el.offsetLeft;
+    //             let offsetY = evt.pageY - that.el.offsetTop;
+    //             let maskX = offsetX - that.mask.offsetWidth / 2
+    //             let maskY = offsetY - that.mask.offsetWidth / 2
+    //             if (maskX <= 0) {
+    //                 maskX = 0;
+    //             }
+    //             if (maskX >= this.el.offsetWidth - this.mask.offsetWidth) {
+    //                 maskX = this.el.offsetWidth - this.mask.offsetWidth
+    //             }
+
+    //             if (maskY <= 0) {
+    //                 maskY = 0;
+    //             }
+    //             if (maskY >= this.el.offsetWidth - this.mask.offsetWidth) {
+    //                 maskY = this.el.offsetWidth - this.mask.offsetWidth
+    //             }
+    //             that.mask.style.left = maskX + 'px'
+    //             that.mask.style.top = maskY + 'px'
+
+
+    //             that.bigImg.style.left = -maskX * this.bigImg.offsetWidth / this.el.offsetWidth + 'px'
+    //             that.bigImg.style.top = -maskY * this.bigImg.offsetWidth / this.el.offsetWidth + 'px'
+    //         }.bind(this)
+
+    //     }
+
+    //     //调整 大图和小图的比例关系
+    //     reSizeBigImg() {
+    //         let that = this;
+    //         //调整   small/mask = bigImg/big
+    //         //  bigimg = big*small/mask
+
+    //         let bigImgWidth = parseFloat(getComputedStyle(this.big).width) * parseFloat(getComputedStyle(this.el).width) / parseFloat(getComputedStyle(this.mask).width)
+    //         this.bigImg.style.width = bigImgWidth + 'px';
+
+    //         this.el.onmouseenter = function () {
+    //             that.mask.style.display = 'block'
+    //             that.big.style.display = 'block'
+    //         }
+    //         this.el.onmouseleave = function () {
+    //             that.mask.style.display = 'none'
+    //             that.big.style.display = 'none'
+    //         }
+    //     }
+
+    // }
+    // let t = new Ddj('.fangda');
+    // console.log(t);
+  
+
+    </script>
+</body>
+
+</html>

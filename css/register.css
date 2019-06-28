@@ -1,0 +1,288 @@
+* {
+  list-style: none;
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #F6F9FB;
+}
+
+.fenge {
+  padding: 6px 6px 0px 6px !important;
+  margin-left: 6px !important;
+  border-left: 1px solid #BCBCBC;
+  font-size: 0 !important;
+  height: 3px !important;
+  position: relative;
+  top: 6px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.head {
+  width: 960px;
+  height: 73px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 2px solid #F07700;
+  background: white;
+}
+
+.head_nav_list ul {
+  margin: 0px;
+  height: 21px;
+  background: white;
+}
+
+.head_nav_list ul .glyphicon-shopping-cart {
+  color: #FF5D04;
+}
+
+.head_nav_list li {
+  height: 21px;
+  float: left;
+  padding-right: 5px;
+  line-height: 21px;
+  font-size: 11px;
+  color: #404040;
+}
+
+.head_nav_list p {
+  text-align: right;
+  margin: 0px;
+  font-size: 11px;
+  color: #404040;
+  padding: 2px 10px 0px 0px;
+}
+
+.head_nav_list p a {
+  text-decoration: none;
+  color: #1a66b3;
+}
+
+.head_nav_list p a:hover {
+  text-decoration: underline;
+}
+
+.mid {
+  width: 960px;
+  margin: 0 auto;
+  background: white;
+  margin-bottom: 40px;
+}
+
+.mid .mid_top {
+  width: 930px;
+  height: 75px;
+  margin-top: 28px;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.mid .mid_top .mid_top_tit {
+  display: flex;
+  background: #FFFFFF;
+  padding-top: 29px;
+  padding-right: 0px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.mid .mid_top .mid_top_tit p {
+  position: relative;
+  width: 135px;
+  top: 2px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 1px solid #eceef2;
+  border-bottom: 1px solid white;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.mid .mid_top .mid_top_tit .p_on {
+  background-color: white;
+}
+
+.mid_top_list {
+  float: right;
+  position: relative;
+  left: 500px;
+  top: 20px;
+}
+
+.mid_top_list .glyphicon-home {
+  color: #FF5D04;
+}
+
+.mid_top_list a {
+  font-size: 11px;
+  color: #646464;
+  text-decoration: none;
+}
+
+.mid_top_list a:hover {
+  color: #ff2832;
+  text-decoration: underline;
+}
+
+.mid_info {
+  overflow: hidden;
+  height: 495px;
+}
+
+.mid_info_tip {
+  line-height: 24px;
+  color: #828282;
+  height: 24px;
+  padding-left: 22px;
+  background: url("/app/src/image/sprlogin.png") 3px -56px no-repeat #fef7f5;
+  width: 670px;
+  border: 1px solid #fedbd1;
+  font-size: 12px;
+  margin: 15px auto;
+}
+
+.mid_info_foot {
+  padding-left: 298px;
+}
+
+.mid_info_foot .inputs {
+  display: flex;
+  margin: 30px 0px;
+  height: 38px;
+}
+
+.mid_info_foot .inputs span {
+  color: red;
+  height: 38px;
+  line-height: 38px;
+  display: none;
+}
+
+.mid_info_foot .inputs .tx {
+  line-height: 38px;
+  height: 38px;
+}
+
+.mid_info_foot .inputs .br {
+  width: 312px;
+  height: 38px;
+  padding: 9px 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.mid_info_foot .inputs .br input {
+  height: 18px;
+  border: none;
+  width: 292px;
+}
+
+.brz {
+  width: 182px;
+  height: 38px;
+  padding: 9px 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.brz input {
+  height: 18px;
+  border: none;
+  width: 162px;
+}
+
+.txz {
+  line-height: 38px;
+  height: 38px;
+  padding-left: 13px;
+}
+
+.checks {
+  padding-left: 60px;
+  font-size: 12px;
+}
+
+.but {
+  display: inline-block;
+  font-size: 20px;
+  border: 0;
+  width: 178px;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ff2832;
+  color: #fff;
+  border-radius: 22px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.footer_nav_box {
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer_nav {
+  text-align: center;
+  line-height: 20px;
+  padding-bottom: 17px;
+  padding-top: 25px;
+}
+
+.footer_nav_box a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+
+.footer_nav span {
+  margin-left: 19px;
+  margin-right: 17px;
+}
+
+.footer_nav_box a:hover {
+  color: #8c8c8c;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.footer_copyright .sep {
+  margin-left: 19px;
+  margin-right: 17px;
+}
+
+.footer_copyright {
+  line-height: 20px;
+  text-align: center;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.footer_icon {
+  padding: 10px 0 0 340px;
+  width: 640px;
+  margin: 0 auto;
+  height: 77px;
+}
+
+.validator {
+  float: left;
+  display: inline;
+  padding: 15px 5px 15px;
+  width: 135px;
+  height: 47px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .foods_style {
+            list-style: none;
+        }
+
+        .foods_style img {
+            width: 80px;
+        }
+
+        .but {
+            width: 30px;
+            text-align: center
+        }
+        #list {
+            min-height: 300px;
+            width: 1000px;
+            border-top:1px solid red;
+        }
+    </style>
+    <script src="../js/Cookie.js"></script>
+</head>
+
+<body>
+    <h3>购物车列表</h3>
+    <ul id="list"></ul>
+    <h4 id="allprice">0</h4>
+    <a href="../index.html">你点这里可以去主页</a>
+    <script>
+        var list = document.getElementById("list");
+        var data = getCookie("goods");
+        data = JSON.parse(data);
+        console.log(data);
+        var str = ""
+        for (i in data) {
+                str +=
+                    `<li class="foods_style">
+                    <img src=${data[i].picurl} alt=${data[i].name} />
+                    <span>${data[i].name}</span>
+                    <span>${data[i].price}块</span>
+                    <input type="button" value="-" class="sub" mark="${i}"/>
+                    <input type="text" value="${data[i].num}" class="but" mark="${i}"/>
+                    <input type="button" value="+" class="add" mark="${i}"/>
+                    <span>件</span>
+                    <span class="price" mark="${i}">${data[i].price * data[i].num}</span><span>元</span>
+                    <a href="javascript:;" class="rem" mark="${i}">删除</a>
+                </li>
+                `;
+        }
+        list.innerHTML = str;
+        var price = document.getElementsByClassName("price");
+        //使用按钮控制商品数量增加
+        var add = document.getElementsByClassName("add");
+        console.log(add);
+        console.log(price);
+        for (let i = 0; i < add.length; i++) {
+            let mark = add[i].getAttribute("mark");
+            add[i].onclick = function () {
+                let goodsNum = data[mark].num
+                goodsNum = parseInt(goodsNum);
+                goodsNum += 1
+                if (goodsNum < 1) {
+                    goodsNum = 1;
+                }
+                data[mark].num = goodsNum; 
+                setCookie("goods", data, 7);
+                for(let j = 0;j<but.length;j++){
+                    if(but[j].getAttribute("mark")==this.getAttribute("mark")){
+                        but[j].value = goodsNum;
+                    }
+                    if(price[j].getAttribute("mark")==this.getAttribute("mark")){
+                        price[j].innerText = parseInt(data[mark].num) * parseInt(data[mark].price);
+                    }
+                }
+                count();
+            }
+        }
+        //使用按钮控制商品数量减少
+        var sub = document.getElementsByClassName("sub");
+        for (let i = 0; i < sub.length; i++) {
+            let mark = sub[i].getAttribute("mark");
+            sub[i].onclick = function () {
+                let goodsNum = data[mark].num
+                goodsNum = parseInt(goodsNum);
+                goodsNum -= 1
+                if (goodsNum < 1) {    
+                    goodsNum = 1;
+                }
+                data[mark].num = goodsNum;
+                
+                setCookie("goods", data, 7);
+                for(let j = 0;j<but.length;j++){
+                    if(but[j].getAttribute("mark")==this.getAttribute("mark")){
+                        but[j].value = goodsNum;
+                    }
+                    if(price[j].getAttribute("mark")==this.getAttribute("mark")){
+                        price[j].innerText = parseInt(data[mark].num) * parseInt(data[mark].price);
+                    }
+                }
+                count();
+            }
+        }
+        //使用input修改值
+        var but = document.getElementsByClassName("but");
+        for (let i = 0; i < but.length; i++) {
+            let mark = but[i].getAttribute("mark");
+            console.log(but[i].value);
+            but[i].onchange = function () {
+                if (but[i].value < 1) {
+                    but[i].value = 1;
+                }
+                let goodsNum = but[i].value;
+                data[mark].num = goodsNum;
+                let datass = JSON.stringify(data);
+                setCookie("goods", datass, 7);
+                price[i].innerText = parseInt(data[mark].num) * parseInt(data[mark].price);
+                count();
+            }
+
+        }
+        //remove
+        var rem = document.getElementsByClassName("rem");
+        for (let i = 0; i < rem.length; i++) {
+            let mark = rem[i].getAttribute("mark");
+            rem[i].onclick = function () {
+                this.parentNode.remove();
+                removeCookie(mark);
+                count();
+            }
+        }
+        //总价格
+
+        function count() {
+            var allprice = document.getElementById("allprice");
+            var numAllPric = 0;
+            for (i = 0; i < price.length; i++) {
+                numAllPric += parseInt(price[i].innerText);
+            }
+            allprice.innerText = numAllPric;
+        }
+        count();
+    </script>
+</body>
+
+</html>
